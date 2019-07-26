@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Projeto: Calculadora de IMC - Jquerry</title>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<style>
+		.container{
+			height: 350px;
+			width: 620px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			top:50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+
+		}
+
+		.top{
+			display: flex;
+			flex: 2;
+			background-color: #00ACC1;
+			padding-left: 20px;
+			flex-direction: column;
+		}
+
+		.imc{
+			display: flex;
+			flex: 4;
+			border: 1px solid #ccc;
+		}
+
+		.referencias{
+			display: flex;
+			flex: 1;
+		}
+
+		#text_top{
+		font-size: 21px;
+		color: white;
+		line-height: 1,33px;
+		padding-top: 15px;
+		}
+
+		p4{
+		font-size: 18px;
+		color: white;
+		}
+
+		#input{
+			display: flex;
+			flex:3; 
+			flex-direction: column;
+			padding-left: 30px;
+			padding-top: 20px;
+			
+			
+		
+		}
+
+		#results{
+			display: flex;
+			flex: 1.5;
+		}
+
+		label{
+			font-size: 14px;
+			display:inline-block;
+
+		}
+
+		input{
+			height: 25px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid #ccc;
+			text-align: center;
+		}
+
+		button{
+			height: 25px;
+			width: 200px;
+			border-radius: 20px;
+			border:1px solid #ccc;
+			color:white;
+			background-color: #00ACC1;
+		}
+
+		#results{
+			height: 100px;
+			width: 120px;
+			margin: auto;
+			font-size: 50px;
+			text-align: center;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+		}
+
+		cm{
+			font-size: 14px;
+		}
+
+		.referencias{
+			text-align: center;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			font-size: 18px;
+			color:#868686;
+			
+
+		}
+
+		::-webkit-input-placeholder {
+			text-align: center;
+			align-items: center
+		}
+		
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="top">
+				<div id="text_top"> Body mass index (BMI)</div>
+				<p4>A measure of body fat in adults</p4>
+		</div>
+		<div class="imc">
+			<div id="input">
+				<label>Weight</label>
+				<input type="text" id="kg" name="kg" placeholder="Peso em Kg"></br>
+				<label>Height</label>
+				<input type="text" id="altura" name="altura" placeholder="Altura ex:1.80"></br>
+
+				<button id="btn">Enviar</button>
+			</div>
+			<div id="results">
+					<cm>Seu IMC é de :</cm>
+			</div>
+		</div>
+		<div class="referencias">
+			Observações:
+		</div>
+	</div>
+	
+</body>
+</html>
